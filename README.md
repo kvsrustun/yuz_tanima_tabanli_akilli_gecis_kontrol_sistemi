@@ -3,9 +3,22 @@
 [![Platform](https://img.shields.io/badge/Donanım-Deneyap%20Kart%201A-007acc?style=for-the-badge&logo=espressif)](https://deneyapkart.org)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Görüntü%20İşleme-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
-[![License](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](#lisans)
+[![License](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](#-lisans)
 
 > **Deneyap Kart 1A (ESP32-CAM)** ve **Python dlib / OpenCV** modelleri kullanılarak geliştirilmiş, çift faktörlü doğrulamaya sahip (Yüz Tanıma + RFID Kart) akıllı kapı ve turnike otomasyonu.
+
+---
+
+## 📑 İçindekiler
+
+1. [Projeye Genel Bakış](#-projeye-genel-bakış)
+2. [Donanım Bileşenleri](#-donanım-bileşenleri)
+3. [Devre Bağlantı Şeması & Pin Haritası](#-devre-bağlantı-şeması--pin-haritası)
+4. [Yazılım Mimarisi & Çalışma Akışı](#-yazılım-mimarisi--çalışma-akışı)
+5. [Kurulum ve Çalıştırma Adımları](#-kurulum-ve-çalıştırma-adımları)
+6. [Yeni Kullanıcı Ekleme](#-yeni-kullanıcı-ekleme)
+7. [Geliştirici](#-geliştirici)
+8. [Lisans](#-lisans)
 
 ---
 
@@ -48,7 +61,7 @@ Bu proje, yüksek güvenlik gerektiren alanlar için tasarlanmış **iki aşamal
 |                          |              |                                  |
 |  D10 (SS / SDA)          |<------------>| RFID RC522 (SDA Pini)            |
 |  D0  (RST)               |<------------>| RFID RC522 (RST Pini)            |
-|  D8  (SCK)               |<------------>| RFID RC522 (SCK Pini)            |
+|  D8  (SCK)               |<------------>| RFID RC522 (SCK Pini)             |
 |  D6  (MOSI)              |<------------>| RFID RC522 (MOSI Pini)           |
 |  D7  (MISO)              |<------------>| RFID RC522 (MISO Pini)           |
 |  3.3V                    |------------->| RFID RC522 (3.3V Güç)            |
@@ -95,7 +108,9 @@ sequenceDiagram
 ## 🚀 Kurulum ve Çalıştırma Adımları
 
 ### 1. Python Gereksinimleri
+
 Python 3.10 ortamında gerekli kütüphaneleri yükleyin:
+
 ```bash
 # Gerekli temel paketler
 pip install opencv-python pyserial numpy face_recognition
@@ -105,6 +120,7 @@ pip install dlib-19.22.99-cp310-cp310-win_amd64.whl
 ```
 
 ### 2. Gömülü Yazılım (Arduino IDE / Deneyap IDE)
+
 1. Arduino IDE'ye **Deneyap Kartlar** paketini ekleyin.
 2. `kamera.ino` dosyasını açıp Wi-Fi bilgilerinizi girin:
    ```cpp
@@ -121,6 +137,7 @@ pip install dlib-19.22.99-cp310-cp310-win_amd64.whl
    ```
 
 ### 3. Yüz Tanıma Betiğini Başlatma
+
 1. Tanınmasını istediğiniz kişinin vesikalık/net fotoğrafını (`kevser.jpg`) proje klasörüne koyun.
 2. `tanima.py` dosyasında kamera URL'sini güncelleyin:
    ```python
@@ -153,7 +170,7 @@ known_face_names.append("Ad Soyad")
 
 **Kevser ÜSTÜN**  
 🎓 Giresun Üniversitesi — Bilgisayar Mühendisliği  
-🔗 [GitHub Profilim](https://github.com/kvsrustun)  
+🔗 [GitHub Profilim](https://github.com/kvsrustun)
 
 ---
 
