@@ -1,9 +1,12 @@
 # 📷 Yüz Tanıma & RFID Tabanlı Akıllı Geçiş Kontrol Sistemi
 
-[![Platform](https://img.shields.io/badge/Donanım-Deneyap%20Kart%201A-007acc?style=for-the-badge&logo=espressif)](https://deneyapkart.org)
-[![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![OpenCV](https://img.shields.io/badge/OpenCV-Görüntü%20İşleme-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
-[![License](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](#-lisans)
+<p align="center">
+  <a href="#donanim-bilesenleri"><img src="https://img.shields.io/badge/Donan%C4%B1m-Deneyap%20Kart%201A-24292e?style=flat-square&logo=espressif" alt="Donanım" /></a>
+  <a href="#yazilim-mimarisi"><img src="https://img.shields.io/badge/Python-3.10-24292e?style=flat-square&logo=python" alt="Python" /></a>
+  <a href="#yazilim-mimarisi"><img src="https://img.shields.io/badge/OpenCV-G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme-24292e?style=flat-square&logo=opencv" alt="OpenCV" /></a>
+  <a href="#donanim-bilesenleri"><img src="https://img.shields.io/badge/RFID-MFRC522-24292e?style=flat-square" alt="RFID" /></a>
+  <a href="#lisans"><img src="https://img.shields.io/badge/Lisans-MIT-24292e?style=flat-square" alt="Lisans" /></a>
+</p>
 
 > **Deneyap Kart 1A (ESP32-CAM)** ve **Python dlib / OpenCV** modelleri kullanılarak geliştirilmiş, çift faktörlü doğrulamaya sahip (Yüz Tanıma + RFID Kart) akıllı kapı ve turnike otomasyonu.
 
